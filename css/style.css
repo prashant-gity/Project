@@ -1,0 +1,360 @@
+/* Fonts */
+@font-face {
+    font-family:'ssp';
+    src: url("../fonts/ssp.ttf") format("truetype");
+}
+body{
+    background: #eee;
+}
+nav{
+    width: 100vw;
+    height: 70px;
+    background: dodgerblue;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 99998;
+    box-shadow: 0 0 10px gray;
+}
+.sidenav{
+    height: calc(100vh - 70px);
+    background: #fff;
+    position: fixed;
+    top: 70px;
+    left: 0;
+    z-index: 99999;
+    overflow-y: hidden;
+    box-shadow: 0 0 10px gray;
+}
+.sidenav .top-info{
+    height: 200px;
+    width: 300px;
+    background: url(../images/backgroud-login.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+.user-detail{
+    position: absolute;
+    bottom: 0;
+    padding: 10px 20px;
+}
+.user-name{
+    padding: 2px 0px;
+    font-size: 1.4em;
+    font-family: ssp;
+    font-weight: bold;
+    margin-top: 7px;
+}
+.user-mail{
+    padding: 0;
+    font-size: 1.2em;
+    font-family: ssp;
+}
+.menu-container{
+    height: calc(100vh - 270px);
+}
+.menu-container ul{
+    list-style: none;
+    padding: 0;
+}
+.menu-container ul li{
+    width: 100%;
+    height: 50px;
+    display: block;
+    line-height: 50px;
+    padding: 0px 20px;
+    color: dodgerblue;
+    font-family: ssp;
+    font-size: 1.2em;
+}
+a{
+    color: inherit;
+}
+a:hover{
+    text-decoration: none;
+    color: rgb(0, 31, 88);
+    cursor: pointer;
+}
+.top-nav{
+    width: 100vw;
+    height: 70px;
+}
+.top-nav .sidenav-toggler{
+    height: 70px;
+    width: 100px;
+    line-height: 70px;
+    text-align: center;
+    font-size: 1.5em;
+    display: block;
+    float: left;
+}
+.sidenav-toggler:hover{
+    cursor: pointer;
+}
+.top-nav .brand-name{
+    width: calc(100vw - 100px);
+    height: 70px;
+    display: block;
+    float: left;
+    line-height: 70px;
+    font-family: ssp;
+    color: #fff;
+    font-size: 2em;
+    font-weight: bold;
+}
+.data-container{
+    margin-top: 70px;
+}
+.product{
+    float: left;
+}
+.product .p-info{
+    width: 100%;
+    height: 200px;
+    display: block;
+}
+.p-info .p-img{
+    width: 50%;
+    height: 200px;
+    display: block;
+    float: left;
+}
+.p-img img{
+    width: 100%;
+    height: 200px;
+}
+.p-info .p-details{
+    width: 50%;
+    height: 200px;
+    display: block;
+    float: left;
+    padding-left: 10px;
+}
+.p-title{
+    font-family: ssp;
+    font-weight: bold;
+    font-size: 30px;
+}
+.p-price, .p-stock{
+    font-family: ssp;
+    font-weight: bold;
+}
+.product .p-action{
+    width: 100%;
+    height: 50px;
+}
+.p-action a{
+    width: 50%;
+    height: 50px;
+    display: block;
+    float: left;
+    line-height: 50px;
+    text-align: center;
+}
+.login-container{
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0,0,0,0.6);
+    z-index: 9999999;
+    top: 0;
+    left: 0;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.login-box{
+    position: absolute;
+    width: 350px;
+    background: #fff;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 2px;
+}
+
+.loader{
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background: rgba(0,0,0,0.8);
+    z-index: 999999999999;
+}
+.loader-box{
+    width: 250px;
+    height: 250px;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(0,0,0,0);
+    border-radius: 10px;
+}
+.loader-box .circle{
+    width: 30px;
+    height: 30px;
+    background: radial-gradient(#30cfd0, #330867);
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: load 3s infinite;
+}
+.cart-box:nth-child(1){
+    margin-top: 80px;
+}
+.cart-box{
+    width: 100%;
+    height: 250px;;
+    background: #fff;
+    position: relative;
+    margin-top: 10px;
+    box-shadow: 0 0 10px gray;
+}
+.cart-p-img{
+    width: 200px;
+    height: 200px;
+    padding: 10px;
+    float: left;
+}
+.cart-p-detail{
+    width: calc(100% - 200px);
+    float: left;
+    padding-left: 15px;
+    font-family: ssp;
+}
+.cart-p-name{
+    font-size: 24px;
+    font-weight: bold;
+}
+.cart-p-price{
+    font-size: 24px;
+}
+.cart-p-qty{
+    margin-top: 20px;
+    display: inline-block;
+}
+.cart-remove{
+    margin-top: 20px;
+    margin-left: 10px;
+    display: inline-block;
+}
+.cart-p-total{
+    width: 100%;
+    display: block;
+    text-align: right;
+    padding-right: 30px;
+    margin-top: 20px;
+    font-size: 20px;
+}
+
+.cart-box img{
+    width: 180px;
+    height: 180px;
+}
+
+#cart_p_qty_minus{
+    border: 2px solid dodgerblue;
+    background: rgba(0,0,0,0);
+    border-radius: 100%;
+    padding: 4px 9px;
+    font-weight: bolder;
+    margin-right: 5px;
+}
+#cart_p_qty_minus:hover{
+    cursor: pointer;
+    background: dodgerblue;
+    color: white;
+}
+#cart_p_qty_add{
+    border: 2px solid dodgerblue;
+    background: rgba(0,0,0,0);
+    border-radius: 100%;
+    padding: 3px 9px;
+    font-weight: bolder;
+    margin-left: 5px;
+}
+#cart_p_qty_add:hover{
+    cursor: pointer;
+    background: dodgerblue;
+    color: white;
+}
+
+.buy-action{
+    width: 100vw;
+    background: dodgerblue;
+    height: 70px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}
+.buy-action #buy_now{
+    width: 50vw;
+    height: 70px;
+    float: left;
+    background: dodgerblue;
+    border: 0;
+    color: rgb(212, 247, 245);
+    font-size: 24px;
+}
+.buy-action #go_back{
+    width: 50vw;
+    height: 70px;
+    float: left;
+    background: tomato;
+    border: 0;
+    color: rgb(255, 215, 215);
+    font-size: 24px;
+}
+.buy-action #go_back:hover{
+    cursor: pointer;
+    background: white;
+    box-sizing: border-box;
+    border: 2px solid tomato;
+    color: tomato;
+}
+.buy-action #buy_now:hover{
+    cursor: pointer;
+    background: white;
+    box-sizing: border-box;
+    border: 2px solid dodgerblue;
+    color: dodgerblue;
+}
+
+.order-card{
+    width: 98vw;
+    min-height: 200px;
+    background: #fff;
+    margin-left: 1vw;
+    margin-top: 10px;
+    box-shadow: 0 0 10px gray;
+}
+.order-card:nth-child(1){
+    margin-top: 80px;
+}
+.order-date{
+    font-size: 18px;
+    font-weight: 300;
+}
+.order-val{
+    font-size: 32px;
+}
+
+
+/* animations */
+@keyframes load {
+    0%{
+        transform: rotate(0deg) scale(0);
+    }
+    50%{
+        transform: rotate(360deg) scale(2);
+    }
+    100%{
+        transform: rotate(720deg) scale(0);
+    }
+}
+

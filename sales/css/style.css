@@ -1,0 +1,40 @@
+.input-group input{
+    width: 100%;
+    padding: 20px;
+    font-size: 24px;
+    margin-top: 20px;
+    border: 0;
+    background: #eee;
+}
+.input-group input[type="submit"]{
+    background: #ff3831;
+    color: #eee;
+    padding: 5px;
+    cursor: pointer;
+    clip-path: polygon(10% 50%, 0 0, 100% 0, 90% 50%, 100% 100%, 0 100%);
+}
+.input-group input[type="submit"]:hover{
+    background: #ff3831 !important;
+    color: #fff;
+}
+.login-container{
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0,0,0,0.6);
+    z-index: 9999999;
+    top: 0;
+    left: 0;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.login-box{
+    position: absolute;
+    width: 350px;
+    background: #fff;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 2px;
+}
